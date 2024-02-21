@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import './App.css';
+import SixthPage from "./Forms/SixthPage"
 
 // import MaterialTable from 'material-table';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 
-class CourseDetails extends Component {
+class FormNo5 extends Component {
   shouldComponentUpdate(nextProps) {
     if (this.props.addCourse !== nextProps.addCourse || this.props.level !== nextProps.level ) {
       return true;
@@ -106,8 +107,8 @@ class CourseDetails extends Component {
         <form>
 
           <Stepper
-            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' } ]}
-            activeStep={1}
+            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
+            activeStep={5}
             styleConfig={{
               activeBgColor: '#2B459B',
               activeTextColor: '#fff',
@@ -120,6 +121,7 @@ class CourseDetails extends Component {
             className={'stepper'}
             stepClassName={'stepper__step'}
           />
+          <SixthPage/>
 
           {/* <div className='select'>
             <select
@@ -179,4 +181,4 @@ class CourseDetails extends Component {
   }
 }
 
-export default CourseDetails;
+export default FormNo5;

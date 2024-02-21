@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import './App.css';
+import EightthPage from "./Forms/EightthPage"
 
 // import MaterialTable from 'material-table';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 
-class FormNo5 extends Component {
+class CourseDetails extends Component {
   shouldComponentUpdate(nextProps) {
     if (this.props.addCourse !== nextProps.addCourse || this.props.level !== nextProps.level ) {
       return true;
@@ -106,8 +107,8 @@ class FormNo5 extends Component {
         <form>
 
           <Stepper
-            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' } ]}
-            activeStep={4}
+            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
+            activeStep={7}
             styleConfig={{
               activeBgColor: '#2B459B',
               activeTextColor: '#fff',
@@ -120,6 +121,8 @@ class FormNo5 extends Component {
             className={'stepper'}
             stepClassName={'stepper__step'}
           />
+
+          < EightthPage/>
 
           {/* <div className='select'>
             <select
@@ -170,7 +173,7 @@ class FormNo5 extends Component {
 
           <div className='buttons'>
             <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
-            <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
+            <button className='buttons__button buttons__button--next' onClick={this.continue}>Submit</button>
           </div>
 
         </form>
@@ -179,4 +182,4 @@ class FormNo5 extends Component {
   }
 }
 
-export default FormNo5;
+export default CourseDetails;

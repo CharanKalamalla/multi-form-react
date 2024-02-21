@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import './App.css';
-import FirstStep from './TypeOfWebsiteForm';
+import FourthPage from './Forms/FourthPage';
 class Summary extends Component {
   continue = e => {
     e.preventDefault();
@@ -19,8 +19,8 @@ class Summary extends Component {
       <div className='form'>
         <div>
           <Stepper
-            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' }]}
-            activeStep={2}
+            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
+            activeStep={3}
             styleConfig={{
               activeBgColor: '#2B459B',
               activeTextColor: '#fff',
@@ -33,12 +33,12 @@ class Summary extends Component {
             className={'stepper'}
             stepClassName={'stepper__step'}
           />
-          < FirstStep />
+          < FourthPage />
          
 
           <div className='buttons'>
             <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
-            <button className='buttons__button buttons__button--next' type='submit' onClick={this.back}>Back</button>
+            <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
           </div>
         </div>
       </div>

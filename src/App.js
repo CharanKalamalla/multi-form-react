@@ -7,7 +7,8 @@ class App extends Component {
 
     return (
       <main className='main-container'>
-          <Form />
+          <Form/>
+    
       </main>
     );
   }

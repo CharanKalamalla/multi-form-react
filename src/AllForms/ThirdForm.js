@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import './App.css';
-import FirstStep from "./TypeOfWebsiteForm"
+import ThirdPage from './Forms/ThirdPage';
 
-class PersonalDetails extends Component {
+class YourIndustry extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep(); 
@@ -12,6 +12,10 @@ class PersonalDetails extends Component {
     // if (isFirstNameValid && isLastNameValid) {
     //   this.props.nextStep();
     // }
+  }
+  back = e => {
+    e.preventDefault();
+    this.props.prevStep();
   }
 
   render() {
@@ -34,8 +38,8 @@ class PersonalDetails extends Component {
         <form>
 
           <Stepper
-            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' }]}
-            activeStep={0}
+            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
+            activeStep={2}
             styleConfig={{
               activeBgColor: '#2B459B',
               activeTextColor: '#fff',
@@ -49,10 +53,12 @@ class PersonalDetails extends Component {
             stepClassName={'stepper__step'}
           />
 
-          <FirstStep />
+          <ThirdPage />
             
           <div style={{textAlign: 'center'}}>
+          <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
             <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
+            
           </div>
 
         </form>
@@ -61,4 +67,4 @@ class PersonalDetails extends Component {
   }
 }
 
-export default PersonalDetails;
+export default YourIndustry;

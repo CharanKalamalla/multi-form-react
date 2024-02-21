@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 
-import PersonalDetails from './AllForms/PersonalDetails';
-import CourseDetails from './AllForms/CourseDetails';
-import Summary from './AllForms/Summary';
-import YourIndustry from './AllForms/YourIndustry';
-import FormNo5 from "./AllForms/FormNo5"
+import PersonalDetails from './AllForms/FirstForm';
+import CourseDetails from './AllForms/SecondForm';
+import Summary from './AllForms/FourthForm';
+import YourIndustry from './AllForms/ThirdForm';
+import FormNo5 from "./AllForms/SixthForm";
+import SecondForm from './AllForms/FifthForm';
+import ThirdForm from "./AllForms/SeventhForm";
+import FourthForm from "./AllForms/EightthForm"
 
 //Sample data
 const coursesData = [
@@ -222,25 +225,37 @@ class Form extends Component {
         )
       case 3:
         return (
-          < YourIndustry />
+          < YourIndustry nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          addCourse={this.addCourse}
+          coursesOptions={coursesOptions}
+          addLevel={this.addLevel}
+          levelOptions={levelOptions}
+          level={level}/>
         )
       case 4:
           return (
-            < FormNo5 />
+            < Summary nextStep={this.nextStep}
+            prevStep={this.prevStep}
+            addCourse={this.addCourse}
+            coursesOptions={coursesOptions}
+            addLevel={this.addLevel}
+            levelOptions={levelOptions}
+            level={level}/>
           )
       case 5:
             return (
-              < YourIndustry 
-              nextStep={this.nextStep}
+              <SecondForm  nextStep={this.nextStep}
               prevStep={this.prevStep}
+              addCourse={this.addCourse}
+              coursesOptions={coursesOptions}
               addLevel={this.addLevel}
-            levelOptions={levelOptions}
-            level={level}
-              />
+              levelOptions={levelOptions}
+              level={level}/>
             )
       case 6:
             return (
-              <Summary 
+              <FormNo5 
               nextStep={this.nextStep}
               prevStep={this.prevStep}
               firstname={firstname}
@@ -252,6 +267,35 @@ class Form extends Component {
               submitData={this.submitData}
             />
             )
+      case 7:
+        return (
+          <ThirdForm 
+          nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          firstname={firstname}
+          lastname={lastname}
+          email={email}
+          phone={phone}
+          coursesChosenSummary={coursesChosenSummary}
+          chosenLevel={chosenLevel}
+          submitData={this.submitData}
+        />
+        )
+      case 8:
+        return(
+          <FourthForm 
+          nextStep={this.nextStep}
+          prevStep={this.prevStep}
+          firstname={firstname}
+          lastname={lastname}
+          email={email}
+          phone={phone}
+          coursesChosenSummary={coursesChosenSummary}
+          chosenLevel={chosenLevel}
+          submitData={this.submitData}
+        />
+        )
+
           
       default: return null
     }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import './App.css';
-import FirstStep from "./TypeOfWebsiteForm"
+import FirstStep from "./FirstPage"
 
-class YourIndustry extends Component {
+class PersonalDetails extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep(); 
@@ -34,8 +34,8 @@ class YourIndustry extends Component {
         <form>
 
           <Stepper
-            steps={[{ label: '' },{ label: '' }, { label: '' }, { label: '' }]}
-            activeStep={3}
+            steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
+            activeStep={0}
             styleConfig={{
               activeBgColor: '#2B459B',
               activeTextColor: '#fff',
@@ -53,7 +53,6 @@ class YourIndustry extends Component {
             
           <div style={{textAlign: 'center'}}>
             <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
-            
           </div>
 
         </form>
@@ -62,4 +61,4 @@ class YourIndustry extends Component {
   }
 }
 
-export default YourIndustry;
+export default PersonalDetails;
