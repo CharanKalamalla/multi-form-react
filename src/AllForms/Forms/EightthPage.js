@@ -122,6 +122,10 @@ const Para1 = Styled.p`
 color:#2B459B;
 font-weight:500;
 `
+
+
+
+
 const Para2 = Styled.p`
 color:#263238;
 margin-top:-10px;
