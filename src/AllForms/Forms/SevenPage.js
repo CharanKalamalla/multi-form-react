@@ -120,9 +120,9 @@ color:#263238;
 const Form = Styled.form`
 
 `
-const Para1 = Styled.p`
+// const Para1 = Styled.p`
 
-`
+// `
 const InputContainer=Styled.div`
 margin-top:20px;
 `
