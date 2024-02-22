@@ -52,37 +52,37 @@ const FirstStep = () => {
                     *Choose the type of website/App you need:
                     </Heading>
                     <CheckBoxCon>
-                        <input type="radio" id="1st"/>
+                        <input type="radio" name="first-page" id="1st"/>
                         <Label htmlfor="1st">
                         Corporate Website/App
                         </Label>
                     </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" id="2st"/>
+                    <CheckBoxCon> 
+                        <input type="radio" name="first-page" id="2st"/>
                         <Label htmlfor="2st">
                         Corporate Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" id="3st"/>
+                        <input type="radio" name="first-page" id="3st"/>
                         <Label htmlfor="3st">
                         Corporate Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" id="4st"/>
+                        <input type="radio" name="first-page" id="4st"/>
                         <Label htmlfor="4st">
                         Corporate Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" id="5st"/>
+                        <input type="radio" name="first-page" id="5st"/>
                         <Label htmlfor="5st">
                         Corporate Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" id="6st"/>
+                        <input type="radio" name="first-page" id="6st"/>
                         <Label htmlfor="6st">
                         Corporate Website/App
                         </Label>

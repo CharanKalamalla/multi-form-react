@@ -102,7 +102,7 @@ color: #263238;
 font-weight:500;
 height:15px;
 `
-const Input2 = Styled.input`
-background: #C1CAE7;
-border: 1px solid gray;
-`
+// const Input2 = Styled.input`
+// background: #C1CAE7;
+// border: 1px solid gray;
+// `

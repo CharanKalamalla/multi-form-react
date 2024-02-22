@@ -105,20 +105,20 @@ font-family:'Roboto';
       flex-direction: column;
   }
 `
-const Button =Styled.div`
-back
-`
+// const Button =Styled.div`
+// back
+// `
 const HomeContainer = Styled.div`
 display: flex;
 flex-direction: column;
 margin-top:20px;
 `
-const Home2 = Styled.div`
-display: flex;
-flex-direction:column;
-justify-content: flex-start;
+// const Home2 = Styled.div`
+// display: flex;
+// flex-direction:column;
+// justify-content: flex-start;
 
-`
+// `
 const StarsImage = Styled.img`
 margin-top:50px;
 height: 70%;
@@ -143,8 +143,8 @@ color:#4C64B2;
 margin-top:-10px;
 font-size: 40px;
 `
-const ParaContainer = Styled.div`
-`
+// const ParaContainer = Styled.div`
+// `
 const Para1 = Styled.p`
 font-size: 24px;
 font-weight:500;

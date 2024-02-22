@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Form from './Form';
+// import Form from './Form';
 import UpperSection from "./AllForms/UpperSection"
 
 class App extends Component {
@@ -9,7 +9,6 @@ class App extends Component {
     return (
       <main className='main-container'>
         <UpperSection/>
-    
       </main>
     );
   }

@@ -184,14 +184,14 @@ const Para1 = Styled.p`
 const InputContainer=Styled.div`
 margin-top:20px;
 `
-const Input1 = Styled.textarea`
-background:transparent;
-border: 1px solid #C1CAE7;
-font-size:15px;
-color: #263238;
-font-weight:500;
-height:15px;
-`
+// const Input1 = Styled.textarea`
+// background:transparent;
+// border: 1px solid #C1CAE7;
+// font-size:15px;
+// color: #263238;
+// font-weight:500;
+// height:15px;
+// `
 const Input = Styled.input`
 
 `
