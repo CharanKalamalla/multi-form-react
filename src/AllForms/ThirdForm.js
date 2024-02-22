@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
 import ThirdPage from './Forms/ThirdPage';
@@ -34,7 +35,7 @@ class YourIndustry extends Component {
     // } = this.props;
 
     return (
-      <div className='form'>
+      <Main className='form'>
         <form>
 
           <Stepper
@@ -55,16 +56,26 @@ class YourIndustry extends Component {
 
           <ThirdPage />
             
-          <div style={{textAlign: 'center'}}>
+          <Button style={{textAlign: 'center'}}>
           <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
             <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
             
-          </div>
+          </Button>
 
         </form>
-      </div>
+      </Main>
     )
   }
 }
 
 export default YourIndustry;
+const Button = Styled.div`
+display:flex;
+justify-content:end;
+margin-top:90px;
+margin-left:-90px;
+`
+
+const Main = Styled.div`
+background-color:#0C111F;
+`

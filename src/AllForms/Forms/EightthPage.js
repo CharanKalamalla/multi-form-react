@@ -46,9 +46,20 @@ const EightthPage = () => {
                         </div>
                     </Main4>
                 </Main3>
+                <Main3>
                 <para3>
                 Preferred way of communication:
                 </para3>
+                <ButtonCon>
+      <ActiveButton>Website</ActiveButton>
+      <div>
+        <Buttonel>Application</Buttonel>
+        <Butt>Software</Butt>
+      </div>
+    </ButtonCon>
+
+                </Main3>
+                
 
             </Main2>
             <label> <Input2 type="checkbox" />I agree to have Sepnoty contact me Via email, Phone, Messenger.</label>
@@ -63,6 +74,37 @@ Refer to our Privacy Policy for details.</para1>
 
 }
 export default EightthPage;
+
+const ActiveButton = Styled.button`
+  background-color: #2b459b;
+  border-radius:10px;
+  margin-right:-20px;
+  font-size: 10px;
+  color: #ffffff;
+  height:30px;
+`;
+
+const Buttonel =    Styled.button`
+  font-size: 10px;
+  background-color: #d9d9d9;
+  margin-left: 10px;
+  border-right: 1px solid #9e9898;
+  height:30px;
+`;
+
+ const Butt = Styled.button`
+  background-color: #d9d9d9;
+  font-size: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height:30px;
+`;
+const ButtonCon = Styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left:40px;
+
+`;
 
 const Main = Styled.div`
     display:flex;
@@ -92,6 +134,7 @@ font-family:inter;
 const Main3 = Styled.div`
 display:flex;
 flex-direction:row;
+margin-top:10px;
 `
 const Main4 = Styled.div`
 display:flex;

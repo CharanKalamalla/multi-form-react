@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
+import Styled from "styled-components"
 import './App.css';
 import FirstStep from "./FirstPage"
 
@@ -30,7 +31,7 @@ class PersonalDetails extends Component {
     // } = this.props;
 
     return (
-      <div className='form'>
+      <Main className='form'>
         <form>
 
           <Stepper
@@ -51,14 +52,26 @@ class PersonalDetails extends Component {
 
           <FirstStep />
             
-          <div style={{textAlign: 'center'}}>
-            <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
-          </div>
+          
 
         </form>
-      </div>
+        <Button style={{textAlign: 'center'}}>
+            <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
+          </Button>
+      </Main>
     )
   }
 }
 
 export default PersonalDetails;
+
+const Button = Styled.div`
+display:flex;
+justify-content:end;
+margin-top:90px;
+margin-left:-90px;
+`
+
+const Main = Styled.div`
+background-color:#0C111F;
+`

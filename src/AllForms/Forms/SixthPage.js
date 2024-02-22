@@ -41,6 +41,10 @@ const SixthPage = () => {
                     <Para1>
                     Should your website or App support payments?
                     </Para1>
+                    <Main5>
+                        <ActiveButton>Yes</ActiveButton>
+                        <Buttonel>No</Buttonel>
+                    </Main5>
                     
                 </Form>
             </FormContainer>
@@ -104,6 +108,35 @@ const SixthPage = () => {
     )
 }
 export default SixthPage;
+
+const Main5 = Styled.div`
+display:flex;
+flex-direction:row;
+`
+const ActiveButton = Styled.button`
+  background-color: #2b459b;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 20px;
+  width:60px;
+  height:30px;
+  color: #ffffff;
+`;
+
+export const Buttonel = Styled.button`
+  font-size: 20px;
+  background-color: #d9d9d9;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px;
+  width:60px;
+  height:30px;
+  margin-left: -10px;
+  border-right: 1px solid #9e9898;
+`;
+
 const Main = Styled.div`
 display:flex;
 flex-direction:row;

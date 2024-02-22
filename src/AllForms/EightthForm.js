@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
 import EightthPage from "./Forms/EightthPage"
@@ -103,7 +104,7 @@ class CourseDetails extends Component {
     // ];
 
     return (
-      <div className='form'>
+      <Main className='form'>
         <form>
 
           <Stepper
@@ -171,15 +172,26 @@ class CourseDetails extends Component {
 
           {/* </div> */}
 
-          <div className='buttons'>
-            <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
-            <button className='buttons__button buttons__button--next' onClick={this.continue}>Submit</button>
-          </div>
 
         </form>
-      </div>
+        <Button className='buttons'>
+            <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
+            <button className='buttons__button buttons__button--next' onClick={this.continue}>Submit</button>
+          </Button>
+      </Main>
     )
   }
 }
 
 export default CourseDetails;
+
+const Button = Styled.div`
+display:flex;
+justify-content:end;
+margin-top:90px;
+margin-left:-90px;
+`
+
+const Main = Styled.div`
+background-color:#0C111F;
+`

@@ -123,7 +123,7 @@ background: #C1CAE7;
 gap:20px;
 `
 const CheckBoxCon = Styled.div`
-gap:30px;
+margin-top:13px;
 align-items:start;
 justify-content:space-between;
 `
