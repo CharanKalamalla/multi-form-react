@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
 import FourthPage from './Forms/FourthPage';
@@ -16,7 +17,7 @@ class Summary extends Component {
   render() {
 
     return (
-      <div className='form'>
+      <Main className='form'>
         <div>
           <Stepper
             steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
@@ -36,14 +37,25 @@ class Summary extends Component {
           < FourthPage />
          
 
-          <div className='buttons'>
+          
+        </div>
+        <Button className='buttons'>
             <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
             <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
-          </div>
-        </div>
-      </div>
+          </Button>
+      </Main>
     )
   }
 }
 
 export default Summary;
+const Button = Styled.div`
+display:flex;
+justify-content:end;
+margin-top:90px;
+margin-left:-90px;
+`
+
+const Main = Styled.div`
+background-color:#0C111F;
+`
