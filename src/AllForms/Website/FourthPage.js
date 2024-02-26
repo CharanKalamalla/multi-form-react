@@ -85,12 +85,15 @@ const Input = Styled.input`
 
 `
 const InputContainer=Styled.div`
-margin-top:20px;
+margin-top:10px;
 `
 const Label = Styled.label`
 font-size:15px;
-color: #263238;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Input1 = Styled.input`
 background:transparent;

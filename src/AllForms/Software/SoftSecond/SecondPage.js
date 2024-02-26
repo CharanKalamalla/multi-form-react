@@ -1,91 +1,98 @@
 import Styled from "styled-components"
 
-const ThirdPage = () => {
-
+const SecondPage = () => {
     return(
         <Main>
             <Form1>
                 <Heading>
-                *What service(s) do you need?
-                </Heading>
+                *What is your industry?
                 <Form2>
                 <InputContainer>
 <Label>
-<Input type='radio' name="industry" value="Healthcare"/>
-Website development
+<Input type='checkbox' name="industry" value="Healthcare"/>
+Healthcare
 </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    Technical Consulting
+    <Input type='checkbox' name="industry" value="Healthcare"/>
+    Retail & Wholesale
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Manufacturing"/>
-    UX design / Redesign
+    <Input type='checkbox' name="industry" value="Manufacturing"/>
+    Manufacturing
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Finanacial"/>
-    UI design / Redesign
+    <Input type='checkbox' name="industry" value="Finanacial"/>
+    Finanacial
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Transportation & Logistics"/>
-    CMS development
+    <Input type='checkbox' name="industry" value="Transportation & Logistics"/>
+    Transportation & Logistics
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Telecommunications"/>
-    Technical SEO
+    <Input type='checkbox' name="industry" value="Telecommunications"/>
+    Telecommunications
     </Label>
 </InputContainer>
 
                 </Form2>
 
+                </Heading>
             </Form1>
             <Form1>
-            <Form2>
+            <Form3>
                 <InputContainer>
 <Label>
-<Input type='radio' name="industry" value="Healthcare"/>
-Migration to a new CMS
+<Input type='checkbox' name="industry" value="Healthcare"/>
+Public sector
 </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    Delivery of new features
+    <Input type='checkbox' name="industry" value="Healthcare"/>
+    Entertainment
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Manufacturing"/>
-    Troubleshooting
+    <Input type='checkbox' name="industry" value="Manufacturing"/>
+    Education
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Finanacial"/>
+    <Input type='checkbox' name="industry" value="Finanacial"/>
+    Professional services
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='checkbox' name="industry" value="Transportation & Logistics"/>
+    Construction
+    </Label>
+</InputContainer>
+<InputContainer>
+    <Input type='checkbox' name="industry" value="Telecommunications"/>
     <Input1 type="text" placeholder="others (please specify)"/>
-    </Label>
 </InputContainer>
-<InputContainer>
-<Label>
-Please provide a link to your existing website if you have one</Label>
-<Input2 type="text"/></InputContainer>
 
-                </Form2>
+                </Form3>
             </Form1>
         </Main>
     )
+
+
 }
-export default ThirdPage;
+export default SecondPage;
 
 const Main = Styled.div`
 display:flex;
@@ -105,6 +112,9 @@ padding:20px;
 height:300px;
 width:300px;
 `
+const Form3 = Styled.div`
+margin-top:40px;
+`
 const Heading = Styled.h1`
 color:#263238;
 font-size:20px;
@@ -118,21 +128,17 @@ const Input = Styled.input`
 
 `
 const InputContainer=Styled.div`
-margin-top:20px;
+margin-top:13px;
 `
 const Label = Styled.label`
 font-size:15px;
-color: #263238;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Input1 = Styled.input`
 background:transparent;
-border: 1px solid gray;
-font-size:15px;
-color: #263238;
-font-weight:500;
-`
-const Input2 = Styled.input`
-background: #C1CAE7;
 border: 1px solid gray;
 `

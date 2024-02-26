@@ -1,59 +1,54 @@
 import Styled from "styled-components"
-const SixthPage = () => {
-    return(
-        
-<Main>
+const FirstStep = () => {
+    
+    return (
+        <Main>
             <FormContainer>
                 <Form>
                     <Heading>
-                    *What type of media content does your Software have to support?
+                    *Choose the type of Software you need:
                     </Heading>
                     <CheckBoxCon>
-                        <input type="checkbox" id="one"/>
-                        <Label htmlfor="one">
-                        Images
+                        <input type="checkbox" id="1st"/>
+                        <Label htmlfor="1st">
+                        Corporate Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="checkbox" id="two"/>
-                        <Label htmlfor="two">
-                        Video
+                        <input type="checkbox" id="2st"/>
+                        <Label htmlfor="2st">
+                        Portfolio Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="checkbox" id="three"/>
-                        <Label htmlfor="three">
-                        Audio
+                        <input type="checkbox" id="3st"/>
+                        <Label htmlfor="3st">
+                        Digital Media Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="checkbox" id="four"/>
-                        <Label htmlfor="four">
-                        Interactive content
+                        <input type="checkbox" id="4st"/>
+                        <Label htmlfor="4st">
+                        Educational Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="checkbox" id="five"/>
-                        <Label htmlfor="five">
-                        Others (Please Specify)
+                        <input type="checkbox" id="5st"/>
+                        <Label htmlfor="5st">
+                        Content aggregator(eg: Forum)
                         </Label>
                     </CheckBoxCon>
-                    <Para1>
-                    Should your website or App support payments?
-                    </Para1>
-                    <Main5>
-                        <ActiveButton>Yes</ActiveButton>
-                        <Buttonel>No</Buttonel>
-                    </Main5>
-                    
+                    <CheckBoxCon>
+                        <input type="checkbox" id="6st"/>
+                        <Input1 type="text" placeholder="others (please specify"/>
+                    </CheckBoxCon>
                 </Form>
             </FormContainer>
             <FormContainer>
                 <Form>
-                <Heading>
-                *What is the expected number of monthly visitors?
+                    <Heading>
+                    *How many Tools will your Software have?
                     </Heading>
-                    
                     <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Healthcare"/>
@@ -107,35 +102,7 @@ const SixthPage = () => {
         </Main>
     )
 }
-export default SixthPage;
-
-const Main5 = Styled.div`
-display:flex;
-flex-direction:row;
-`
-const ActiveButton = Styled.button`
-  background-color: #2b459b;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  font-size: 20px;
-  width:60px;
-  height:30px;
-  color: #ffffff;
-`;
-
-export const Buttonel = Styled.button`
-  font-size: 20px;
-  background-color: #d9d9d9;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 0px;
-  width:60px;
-  height:30px;
-  margin-left: -10px;
-  border-right: 1px solid #9e9898;
-`;
+export default FirstStep;
 
 const Main = Styled.div`
 display:flex;
@@ -157,33 +124,59 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
+padding:20px;
+height:300px;
+width:400px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:-20px;
+gap:20px;
 border-radius:10px;
-padding:20px;
-height:400px;
-width:300px;
 `
 const CheckBoxCon = Styled.div`
-gap:30px;
+margin-top:13px;
 align-items:start;
 justify-content:space-between;
-margin-top:13px;
 `
 const Label = Styled.label`
 font-size:15px;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
 color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Form = Styled.form`
 
 `
+const Input1 = Styled.input`
+background:transparent;
+border: 1px solid gray;
+font-size:15px;
+color: #263238;
+font-weight:500;
+height:15px;
+`
+const Buttonel = Styled.button`
+  font-size: 20px;
+  background-color: #d9d9d9;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px;
+  width:60px;
+  height:30px;
+  margin-left: -10px;
+  border-right: 1px solid #9e9898;
+`;
+
+
+
 const Para1 = Styled.p`
 
 `
 const InputContainer=Styled.div`
-margin-top:20px;
+margin-top:5px;
 `
 // const Input1 = Styled.textarea`
 // background:transparent;

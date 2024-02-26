@@ -113,8 +113,11 @@ margin-top:13px;
 `
 const Label = Styled.label`
 font-size:15px;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
 color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Form = Styled.form`
 

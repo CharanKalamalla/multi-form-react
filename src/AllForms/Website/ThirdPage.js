@@ -1,98 +1,91 @@
 import Styled from "styled-components"
 
-const SecondForm = () => {
+const ThirdPage = () => {
+
     return(
         <Main>
             <Form1>
                 <Heading>
-                *What is your industry?
+                *What service(s) do you need?
+                </Heading>
                 <Form2>
                 <InputContainer>
 <Label>
-<Input type='checkbox' name="industry" value="Healthcare"/>
-Healthcare
+<Input type='radio' name="industry" value="Healthcare"/>
+Website development
 </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Healthcare"/>
-    Retail & Wholesale
+    <Input type='radio' name="industry" value="Healthcare"/>
+    Technical Consulting
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Manufacturing"/>
-    Manufacturing
+    <Input type='radio' name="industry" value="Manufacturing"/>
+    UX design / Redesign
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Finanacial"/>
-    Finanacial
+    <Input type='radio' name="industry" value="Finanacial"/>
+    UI design / Redesign
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Transportation & Logistics"/>
-    Transportation & Logistics
+    <Input type='radio' name="industry" value="Transportation & Logistics"/>
+    CMS development
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Telecommunications"/>
-    Telecommunications
+    <Input type='radio' name="industry" value="Telecommunications"/>
+    Technical SEO
     </Label>
 </InputContainer>
 
                 </Form2>
 
-                </Heading>
             </Form1>
             <Form1>
-            <Form2>
+            <Form3>
                 <InputContainer>
 <Label>
-<Input type='checkbox' name="industry" value="Healthcare"/>
-Public sector
+<Input type='radio' name="industry" value="Healthcare"/>
+Migration to a new CMS
 </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Healthcare"/>
-    Entertainment
+    <Input type='radio' name="industry" value="Healthcare"/>
+    Delivery of new features
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Manufacturing"/>
-    Education
+    <Input type='radio' name="industry" value="Manufacturing"/>
+    Troubleshooting
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='checkbox' name="industry" value="Finanacial"/>
-    Professional services
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='checkbox' name="industry" value="Transportation & Logistics"/>
-    Construction
-    </Label>
-</InputContainer>
-<InputContainer>
-    <Input type='checkbox' name="industry" value="Telecommunications"/>
+    <Input type='radio' name="industry" value="Finanacial"/>
     <Input1 type="text" placeholder="others (please specify)"/>
+    </Label>
 </InputContainer>
+<InputContainer>
+<Label>
+Please provide a link to your existing website if you have one</Label>
+<Input2 type="text"/></InputContainer>
 
-                </Form2>
+                </Form3>
             </Form1>
         </Main>
     )
-
-
 }
-export default SecondForm
+export default ThirdPage;
 
 const Main = Styled.div`
 display:flex;
@@ -112,9 +105,6 @@ padding:20px;
 height:300px;
 width:300px;
 `
-const Form3 = Styled.div`
-
-`
 const Heading = Styled.h1`
 color:#263238;
 font-size:20px;
@@ -132,10 +122,23 @@ margin-top:20px;
 `
 const Label = Styled.label`
 font-size:15px;
-color: #263238;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Input1 = Styled.input`
 background:transparent;
 border: 1px solid gray;
+font-size:15px;
+color: #263238;
+font-weight:500;
+`
+const Input2 = Styled.input`
+background: #C1CAE7;
+border: 1px solid gray;
+`
+const Form3 = Styled.div`
+margin-top:40px;
 `

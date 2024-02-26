@@ -139,9 +139,6 @@ const Main3 = Styled.div`
 display:flex;
 flex-direction:row;
 margin-top:10px;
-
-
-
 margin-bottom:10px;
 `
 const Main4 = Styled.div`

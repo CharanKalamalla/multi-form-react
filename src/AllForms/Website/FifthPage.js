@@ -1,99 +1,86 @@
-import Styled from "styled-components"
-const FirstStep = () => {
-    
-    return (
+import Styled from 'styled-components';
+
+const FifthPage = () => {
+    return(
         <Main>
             <FormContainer>
                 <Form>
                     <Heading>
-                    *Choose the type of website/App you need:
+                    *What Software features/capabilities do you need?
                     </Heading>
                     <CheckBoxCon>
                         <input type="checkbox" id="1st"/>
                         <Label htmlfor="1st">
-                        Corporate Website/App
+                        Multi domain configuration
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="2st"/>
                         <Label htmlfor="2st">
-                        Corporate Website/App
+                        Basic features
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="3st"/>
                         <Label htmlfor="3st">
-                        Corporate Website/App
+                        Drag - and - drop Page editor
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="4st"/>
                         <Label htmlfor="4st">
-                        Corporate Website/App
+                        Templates
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="5st"/>
                         <Label htmlfor="5st">
-                        Corporate Website/App
+                        Core features
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="6st"/>
                         <Label htmlfor="6st">
-                        Corporate Website/App
+                        Customizable features
                         </Label>
                     </CheckBoxCon>
                 </Form>
             </FormContainer>
             <FormContainer>
-                <Form>
-                    <Heading>
-                    *Choose the type of website/App you need:
-                    </Heading>
+                <Form1>
+                    
                     <CheckBoxCon>
-                        <input type="radio" name="first-page" id="1st"/>
-                        <Label htmlfor="1st">
-                        Corporate Website/App
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon> 
-                        <input type="radio" name="first-page" id="2st"/>
-                        <Label htmlfor="2st">
-                        Corporate Website/App
+                        <input type="checkbox" id="7st"/>
+                        <Label htmlfor="7st">
+                        Collaboration features
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" name="first-page" id="3st"/>
-                        <Label htmlfor="3st">
-                        Corporate Website/App
+                        <input type="checkbox" id="8st"/>
+                        <Label htmlfor="8st">
+                        Integration features
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" name="first-page" id="4st"/>
-                        <Label htmlfor="4st">
-                        Corporate Website/App
+                        <input type="checkbox" id="9st"/>
+                        <Label htmlfor="9st">
+                        Security features
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="radio" name="first-page" id="5st"/>
-                        <Label htmlfor="5st">
-                        Corporate Website/App
+                        <input type="checkbox" id="10st"/>
+                        <Label htmlfor="10st">
+                        Others (Please Specify)
                         </Label>
                     </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="6st"/>
-                        <Label htmlfor="6st">
-                        Corporate Website/App
-                        </Label>
-                    </CheckBoxCon>
-                </Form>
-                
+                </Form1>
             </FormContainer>
         </Main>
     )
+
 }
-export default FirstStep;
+
+export default FifthPage;
 
 const Main = Styled.div`
 display:flex;
@@ -115,22 +102,31 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
-padding:20px;
-height:300px;
-width:400px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:20px;
+gap:-20px;
 border-radius:10px;
+padding:20px;
+height:300px;
+width:300px;
 `
 const CheckBoxCon = Styled.div`
-margin-top:13px;
+gap:30px;
 align-items:start;
 justify-content:space-between;
+margin-top:13px;
 `
 const Label = Styled.label`
 font-size:15px;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Form = Styled.form`
 
+`
+const Form1 = Styled.form`
+margin-top:60px;
 `

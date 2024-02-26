@@ -1,5 +1,5 @@
 import Styled from "styled-components";
-import Form from "../Form";
+import Button from "./Button"
 const Image = "./images/Stars.svg"
 const Stars = "./images/Stars2.svg"
 const image2 = "./images/Standing.svg"
@@ -29,13 +29,6 @@ const CostHome = () => {
                 <Heading3>
                 What type of development do you need?
                 </Heading3>
-                <ButtonCon>
-      <ActiveButton>Website</ActiveButton>
-      <div>
-        <Buttonel>Application</Buttonel>
-        <Butt>Software</Butt>
-      </div>
-    </ButtonCon>
                 </DevelopContainer>
             </HomeContainer>
             <RightContainer>
@@ -44,45 +37,12 @@ const CostHome = () => {
             </RightContainer> 
         </Main>
         <div>
-          <Form/>
+          <Button/>
         </div>
         </Main2>
     )
 }
 export default CostHome;
-
- const ActiveButton = Styled.button`
-  background-color: #2b459b;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  font-size: 20px;
-  padding: 10px;
-  color: #ffffff;
-`;
-
-const Buttonel =    Styled.button`
-  font-size: 20px;
-  background-color: #d9d9d9;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 10px;
-  margin-left: -10px;
-  border-right: 1px solid #9e9898;
-`;
-
- const Butt = Styled.button`
-  background-color: #d9d9d9;
-  padding: 10px;
-  font-size: 20px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-`;
-const ButtonCon = Styled.div`
-  display: flex;
-  flex-direction: row;
-  margin-top: -30px;
-  padding: 60px;
-`;
 
 const Main2 = Styled.div`
 display:flex;
