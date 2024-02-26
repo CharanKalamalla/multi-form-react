@@ -195,8 +195,8 @@ margin-top:5px;
 // font-weight:500;
 // height:15px;
 // `
-const Input = Styled.input`
+const Input = Styled.input``
 
 
-const Form = Styled.form`
-`
+const Form = Styled.form``
+
