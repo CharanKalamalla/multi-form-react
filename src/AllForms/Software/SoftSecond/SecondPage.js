@@ -1,6 +1,6 @@
 import Styled from "styled-components"
 
-const SecondForm = () => {
+const SecondPage = () => {
     return(
         <Main>
             <Form1>
@@ -9,37 +9,37 @@ const SecondForm = () => {
                 <Form2>
                 <InputContainer>
 <Label>
-<Input type='radio' name="industry" value="Healthcare"/>
+<Input type='checkbox' name="industry" value="Healthcare"/>
 Healthcare
 </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+    <Input type='checkbox' name="industry" value="Healthcare"/>
     Retail & Wholesale
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Manufacturing"/>
+    <Input type='checkbox' name="industry" value="Manufacturing"/>
     Manufacturing
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Finanacial"/>
+    <Input type='checkbox' name="industry" value="Finanacial"/>
     Finanacial
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Transportation & Logistics"/>
+    <Input type='checkbox' name="industry" value="Transportation & Logistics"/>
     Transportation & Logistics
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Telecommunications"/>
+    <Input type='checkbox' name="industry" value="Telecommunications"/>
     Telecommunications
     </Label>
 </InputContainer>
@@ -49,52 +49,50 @@ Healthcare
                 </Heading>
             </Form1>
             <Form1>
-            <Form2>
+            <Form3>
                 <InputContainer>
 <Label>
-<Input type='radio' name="industry" value="Healthcare"/>
+<Input type='checkbox' name="industry" value="Healthcare"/>
 Public sector
 </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+    <Input type='checkbox' name="industry" value="Healthcare"/>
     Entertainment
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Manufacturing"/>
+    <Input type='checkbox' name="industry" value="Manufacturing"/>
     Education
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Finanacial"/>
+    <Input type='checkbox' name="industry" value="Finanacial"/>
     Professional services
     </Label>
 </InputContainer>
 <InputContainer>
 <Label>
-    <Input type='radio' name="industry" value="Transportation & Logistics"/>
+    <Input type='checkbox' name="industry" value="Transportation & Logistics"/>
     Construction
     </Label>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Telecommunications"/>
-    others (please specify)
-    </Label>
+    <Input type='checkbox' name="industry" value="Telecommunications"/>
+    <Input1 type="text" placeholder="others (please specify)"/>
 </InputContainer>
 
-                </Form2>
+                </Form3>
             </Form1>
         </Main>
     )
 
 
 }
-export default SecondForm
+export default SecondPage;
 
 const Main = Styled.div`
 display:flex;
@@ -106,13 +104,16 @@ gap:20px;
 const Form1 = Styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
-align-items:center;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-padding:10px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
 height:300px;
 width:300px;
+`
+const Form3 = Styled.div`
+margin-top:40px;
 `
 const Heading = Styled.h1`
 color:#263238;
@@ -122,15 +123,24 @@ margin-bottom:20px;
 `
 const Form2 = Styled.form`
 
+
+
 `
 const Input = Styled.input`
 
 `
 const InputContainer=Styled.div`
-margin-top:20px;
+margin-top:13px;
 `
 const Label = Styled.label`
 font-size:15px;
-color: #263238;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
+`
+const Input1 = Styled.input`
+background:transparent;
+border: 1px solid gray;
 `

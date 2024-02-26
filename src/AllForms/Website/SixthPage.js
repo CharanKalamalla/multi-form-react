@@ -123,7 +123,7 @@ const ActiveButton = Styled.button`
   color: #ffffff;
 `;
 
-export const Buttonel = Styled.button`
+const Buttonel = Styled.button`
   font-size: 20px;
   background-color: #d9d9d9;
   border-bottom-right-radius: 10px;
@@ -157,23 +157,30 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
-padding:10px;
-height:400px;
-width:300px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:20px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
+height:300px;
+width:300px;
 `
 const CheckBoxCon = Styled.div`
 gap:30px;
 align-items:start;
 justify-content:space-between;
-margin-top:13px;
+margin-top:5px;
+
+
+
 `
 const Label = Styled.label`
 font-size:15px;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
 color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Form = Styled.form`
 
@@ -182,16 +189,16 @@ const Para1 = Styled.p`
 
 `
 const InputContainer=Styled.div`
-margin-top:20px;
+margin-top:5px;
 `
-const Input1 = Styled.textarea`
-background:transparent;
-border: 1px solid #C1CAE7;
-font-size:15px;
-color: #263238;
-font-weight:500;
-height:15px;
-`
+// const Input1 = Styled.textarea`
+// background:transparent;
+// border: 1px solid #C1CAE7;
+// font-size:15px;
+// color: #263238;
+// font-weight:500;
+// height:15px;
+// `
 const Input = Styled.input`
 
 `

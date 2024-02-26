@@ -50,7 +50,7 @@ Website development
 
             </Form1>
             <Form1>
-            <Form2>
+            <Form3>
                 <InputContainer>
 <Label>
 <Input type='radio' name="industry" value="Healthcare"/>
@@ -72,7 +72,7 @@ Migration to a new CMS
 <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
-    <Input1>others (please specify)</Input1>
+    <Input1 type="text" placeholder="others (please specify)"/>
     </Label>
 </InputContainer>
 <InputContainer>
@@ -80,7 +80,10 @@ Migration to a new CMS
 Please provide a link to your existing website if you have one</Label>
 <Input2 type="text"/></InputContainer>
 
-                </Form2>
+
+
+
+                </Form3>
             </Form1>
         </Main>
     )
@@ -97,11 +100,11 @@ gap:20px;
 const Form1 = Styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
-align-items:center;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-padding:10px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
 height:300px;
 width:300px;
 `
@@ -122,12 +125,15 @@ margin-top:20px;
 `
 const Label = Styled.label`
 font-size:15px;
-color: #263238;
-font-weight:500;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
-const Input1 = Styled.textarea`
+const Input1 = Styled.input`
 background:transparent;
-border: 1px solid #C1CAE7;
+border: 1px solid gray;
 font-size:15px;
 color: #263238;
 font-weight:500;
@@ -135,4 +141,7 @@ font-weight:500;
 const Input2 = Styled.input`
 background: #C1CAE7;
 border: 1px solid gray;
+`
+const Form3 = Styled.div`
+margin-top:40px;
 `
