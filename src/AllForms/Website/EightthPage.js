@@ -69,9 +69,6 @@ Refer to our <Span>Privacy Policy </Span>for details.</para1>
 
 }
 
-
-
-
 export default EightthPage;
 
 const ActiveButton = Styled.button`

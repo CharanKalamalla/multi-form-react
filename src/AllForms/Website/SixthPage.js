@@ -162,7 +162,13 @@ background: #C1CAE7;
 gap:-20px;
 border-radius:10px;
 padding:20px;
+
 height:300px;
+
+height:300px;
+
+height:400px;
+
 width:300px;
 `
 const CheckBoxCon = Styled.div`
@@ -189,7 +195,8 @@ const Para1 = Styled.p`
 
 `
 const InputContainer=Styled.div`
-margin-top:5px;
+margin-top:20px;
+
 `
 // const Input1 = Styled.textarea`
 // background:transparent;

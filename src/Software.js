@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-
-
-
 import FirstForm from "./AllForms/Software/SoftFirst/first";
 import SecondForm from './AllForms/Software/SoftSecond/second';
 import YourIndustry from './AllForms/ThirdForm';

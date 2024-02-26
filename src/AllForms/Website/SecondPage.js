@@ -136,11 +136,16 @@ margin-top:20px;
 `
 const Label = Styled.label`
 font-size:15px;
+
 font-family: Inter;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+
+color: #263238;
+font-weight:500;
+
 `
 const Input1 = Styled.input`
 background:transparent;

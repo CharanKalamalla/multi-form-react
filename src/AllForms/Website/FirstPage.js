@@ -6,7 +6,7 @@ const FirstStep = () => {
             <FormContainer>
                 <Form>
                     <Heading>
-                    *Choose the type of Software you need:
+                    *Choose the type of website/App you need:
                     </Heading>
                     <CheckBoxCon>
                         <input type="checkbox" id="1st"/>
@@ -18,18 +18,24 @@ const FirstStep = () => {
                         <input type="checkbox" id="2st"/>
                         <Label htmlfor="2st">
                         Portfolio Website/App
+
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="3st"/>
                         <Label htmlfor="3st">
+
                         Digital Media Website/App
+
+                    
+
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="4st"/>
                         <Label htmlfor="4st">
                         Educational Website/App
+                      
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
@@ -47,6 +53,7 @@ const FirstStep = () => {
             <FormContainer>
                 <Form>
                     <Heading>
+
                     *How many Tools will your Software have?
                     </Heading>
               
@@ -100,7 +107,8 @@ const FirstStep = () => {
     more than 10,000
     </Label>
 </InputContainer>
-                </Form>
+</Form>
+                
             </FormContainer>
         </Main>
     )
@@ -142,14 +150,12 @@ justify-content:space-between;
 `
 const Label = Styled.label`
 font-size:15px;
+
 font-family: Inter;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
-`
-const Form = Styled.form`
-
 `
 const Input1 = Styled.input`
 background:transparent;
@@ -191,4 +197,6 @@ margin-top:5px;
 // `
 const Input = Styled.input`
 
+
+const Form = Styled.form`
 `
