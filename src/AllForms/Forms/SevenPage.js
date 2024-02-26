@@ -60,9 +60,7 @@ No
 <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
-    <Input1>
-Yes (Please Specify)
-</Input1>
+    <Input1 type="text" placeholder="Yes (Please Specify)"/>
     </Label>
 </InputContainer>
 <Heading>
@@ -70,7 +68,7 @@ Yes (Please Specify)
                     </Heading>
 
                 </Form2>
-                <Input3>Please add here</Input3>
+                <Input3 type="text" placeholder="Yes (Please Specify)"/>
                 
             </Form1>
         </Main>
@@ -99,12 +97,13 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
-padding:10px;
-height:300px;
-width:300px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:20px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
+height:300px;
+width:300px;
 `
 const CheckBoxCon = Styled.div`
 gap:30px;
@@ -126,9 +125,9 @@ const Form = Styled.form`
 const InputContainer=Styled.div`
 margin-top:20px;
 `
-const Input1 = Styled.textarea`
+const Input1 = Styled.input`
 background:transparent;
-border: 1px solid #C1CAE7;
+border: 1px solid gray;
 font-size:15px;
 color: #263238;
 font-weight:500;
@@ -140,19 +139,20 @@ const Input = Styled.input`
 const Form1 = Styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
-align-items:center;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-padding:10px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
 height:300px;
 width:300px;
 `
 const Form2 = Styled.form`
 
 `
-const Input3 = Styled.textarea`
+const Input3 = Styled.input`
 background:transparent;
+border: 1px solid gray;
 width:300px;
 `
 

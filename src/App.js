@@ -1,3 +1,4 @@
+import Styled from "styled-components"
 import React, { Component } from 'react';
 // import Form from './Form';
 import UpperSection from "./AllForms/UpperSection"
@@ -7,11 +8,14 @@ class App extends Component {
   render() {
 
     return (
-      <main className='main-container'>
+      <Main className='main-container'>
         <UpperSection/>
-      </main>
+      </Main>
     );
   }
 }
 
 export default App;
+const Main = Styled.div`
+
+`

@@ -72,7 +72,7 @@ Migration to a new CMS
 <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
-    <Input1>others (please specify)</Input1>
+    <Input1 type="text" placeholder="others (please specify)"/>
     </Label>
 </InputContainer>
 <InputContainer>
@@ -97,11 +97,11 @@ gap:20px;
 const Form1 = Styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
-align-items:center;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-padding:10px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
 height:300px;
 width:300px;
 `
@@ -125,9 +125,9 @@ font-size:15px;
 color: #263238;
 font-weight:500;
 `
-const Input1 = Styled.textarea`
+const Input1 = Styled.input`
 background:transparent;
-border: 1px solid #C1CAE7;
+border: 1px solid gray;
 font-size:15px;
 color: #263238;
 font-weight:500;

@@ -115,12 +115,13 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
-padding:10px;
+padding:20px;
 height:300px;
-width:300px;
+width:400px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
 gap:20px;
+border-radius:10px;
 `
 const CheckBoxCon = Styled.div`
 margin-top:13px;
