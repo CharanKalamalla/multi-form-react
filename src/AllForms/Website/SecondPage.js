@@ -136,11 +136,16 @@ margin-top:20px;
 `
 const Label = Styled.label`
 font-size:15px;
+<<<<<<< HEAD:src/AllForms/Website/SecondPage.js
 font-family: Inter;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+=======
+color: #263238;
+font-weight:500;
+>>>>>>> fe4bdef283449457ce75084daa96f30696a89b15:src/AllForms/Forms/SecondPage.js
 `
 const Input1 = Styled.input`
 background:transparent;

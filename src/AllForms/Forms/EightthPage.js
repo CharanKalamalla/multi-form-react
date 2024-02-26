@@ -16,34 +16,29 @@ const EightthPage = () => {
                     <Main4>
                         <label>
                         *Full name
-                        </label>
-                        <div>
                         <Input type="text"/>
-                        </div>
+                        </label>
                     </Main4>
                     <Main4>
-                        <para3>
-                        *Company name
-                        </para3>
-                        <div>
+                    <label>
+                        *Company Name
                         <Input type="text"/>
-                        </div>
+                        </label>
                     </Main4>
                 </Main3>
                 <Main3>
                     <Main4>
                         <label htmlFor="Fullname">
                         *Work email
-                        </label>
                         <Input type="text" id="Fullname"/>
+                        </label>
+                        
                     </Main4>
                     <Main4>
-                        <para3>
-                        *Phone number
-                        </para3>
-                        <div>
-                        <Input type="text"/>
-                        </div>
+                    <label htmlFor="Fullname">
+                        *Phone Number
+                        <Input type="text" id="Fullname"/>
+                        </label>
                     </Main4>
                 </Main3>
                 <Main3>
@@ -51,10 +46,10 @@ const EightthPage = () => {
                 Preferred way of communication:
                 </para3>
                 <ButtonCon>
-      <ActiveButton>Website</ActiveButton>
+      <ActiveButton>Any</ActiveButton>
       <div>
-        <Buttonel>Application</Buttonel>
-        <Butt>Software</Butt>
+        <Buttonel>Email</Buttonel>
+        <Butt>Phone</Butt>
       </div>
     </ButtonCon>
 
@@ -68,7 +63,7 @@ const EightthPage = () => {
 centres.</label>
 <para1>Your personal data will be stored for ten years on US servers in accordance with GDPR, and erased thereafter. 
 We'll share it with our development centre to address your request, ensuring GDPR compliance at both locations. 
-Refer to our Privacy Policy for details.</para1>
+Refer to our <Span>Privacy Policy </Span>for details.</para1>
         </Main>
     )
 
@@ -77,19 +72,23 @@ export default EightthPage;
 
 const ActiveButton = Styled.button`
   background-color: #2b459b;
-  border-radius:10px;
-  margin-right:-20px;
+  border-radius:8px;
+  margin-right:-10px;
+  margin-top:5px;
   font-size: 10px;
   color: #ffffff;
   height:30px;
+  height:20px;
+  width:60px;
 `;
 
 const Buttonel =    Styled.button`
   font-size: 10px;
   background-color: #d9d9d9;
-  margin-left: 10px;
+  margin-left: 1px;
   border-right: 1px solid #9e9898;
-  height:30px;
+  height:20px;
+  width:60px;
 `;
 
  const Butt = Styled.button`
@@ -97,7 +96,8 @@ const Buttonel =    Styled.button`
   font-size: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  height:30px;
+  height:20px;
+  width:60px;
 `;
 const ButtonCon = Styled.div`
   display: flex;
@@ -122,6 +122,10 @@ const Para1 = Styled.p`
 color:#2B459B;
 font-weight:500;
 `
+
+
+
+
 const Para2 = Styled.p`
 color:#263238;
 margin-top:-10px;
@@ -135,6 +139,7 @@ const Main3 = Styled.div`
 display:flex;
 flex-direction:row;
 margin-top:10px;
+margin-bottom:10px;
 `
 const Main4 = Styled.div`
 display:flex;
@@ -145,6 +150,9 @@ background:transparent;
 `
 const Input2 = Styled.input`
 
+`
+const Span = Styled.span`
+color:#BC2424;
 `
 
 
