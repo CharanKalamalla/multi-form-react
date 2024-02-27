@@ -8,6 +8,10 @@ function MainPage() {
   const [currentPage, setCurrentPage] = useState("website");
   
 
+
+
+
+  
   const handleButtonClick = (page) => {
     setCurrentPage(page);
    
