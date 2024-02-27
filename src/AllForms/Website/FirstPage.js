@@ -17,7 +17,7 @@ const FirstStep = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="2st"/>
                         <Label htmlfor="2st">
-                        Portfolio Website/App
+                         Portfolio Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
